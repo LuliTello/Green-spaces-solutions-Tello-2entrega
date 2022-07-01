@@ -346,9 +346,21 @@ iframe {
 }
 
 /*page services*/
-h2.titulo__pages {
+.services--img{
+    width: 70rem;
+    height: 30rem;
+    margin: 0rem 2rem 1rem 8rem;
+    opacity: 0.8;
+    position: relative;
+}
+h2.titulo__services {
+    color: #fff;
     font-size: 36px;
+    font-style: italic;
     text-align: center;
+    position: absolute;
+    top: 34rem;
+    left: 45rem;
 }
 .mantenimiento--info p {
     text-align: justify;
@@ -365,14 +377,14 @@ h2.titulo__pages {
     width: 20rem;
     height: 20rem;
 }
-/*no estoy pudiendo ponerle viñetas, probe con li, ul y no aparecen*/
+
 .lista--mant {
     list-style-type: circle;
     margin: 1rem 3rem 2rem 3rem;
 }
-
+/*modificacion*/
 .lista--mant li {
-    display: block;
+    display: list-item;
 }
 
 .contenedor__mantenimiento {
@@ -390,6 +402,7 @@ h2.titulo__pages {
     grid-area: mantenimiento--info;
     margin: 1rem 30rem 1rem 3rem;
     padding: 0 1rem;
+    color: rgb(20, 13, 59);
 }
 
 .lista__pages--servicio {
@@ -415,9 +428,34 @@ h2.titulo__pages {
     border-radius: 2rem;
     margin: 2rem 0rem 1rem 0rem;
     padding: 2rem 5rem 2rem 5rem;
+    color: rgb(20, 13, 59);
 }
 
 /*page galery*/
+/*modificacion*/
+.galery--img{
+    width: 70rem;
+    height: 30rem;
+    margin: 0rem 2rem 3rem 8rem;
+    opacity: 0.8;
+    position: relative;
+}
+h2.titulo__galery {
+    color: #fff;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    top: 32rem;
+    left: 45rem;
+}
+.galery__subtitulo{
+    color: rgb(20, 13, 59);
+    font-size: 22px;
+    margin: 1rem 5rem 2rem 4rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
 .galery__blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -430,12 +468,34 @@ h2.titulo__pages {
 .galery__blog img {
     width: 20rem;
     height: 20rem;
+    /*modificacion*/
+    border-radius: 0.3rem;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*page about us*/
+/*modificacion*/
+video {
+    width: 100%;
+    height: 32rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+h2.titulo__nosotros {
+    color: #f8f8ff;
+    font-size: 28px;
+    font-style: italic;
+    position: absolute;
+    top: 32rem;
+    left: 50rem;
+}
 .nosotros{
     margin: 0 2rem;
     padding: 0 1rem 2rem 1rem;
+}
+.nosotros h2{
+    text-decoration: underline;
+    color: rgb(20, 13, 59);
 }
 .nosotros p {
     font-size: 18px;
@@ -472,7 +532,9 @@ h2.titulo__pages {
 }
 
 .formulario h2 {
+    color: rgb(20, 13, 59);
     font-size: 26px;
+    text-decoration: underline;
 }
 
 input,
@@ -518,6 +580,12 @@ button {
 .contact__contacto {
     margin:3rem 1rem 0 3rem ;
     padding-left: 3rem;
+    color: rgb(20, 13, 59);
+    
+}
+/*modificacion*/
+.contact__contacto h3{
+    text-decoration: underline;
 }
 
 /*mobile last*/
