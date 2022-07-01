@@ -1,0 +1,942 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #1D8348, #82E0AA);
+}
+
+h1 {
+    font-size: 26px;
+    color: #000;
+}
+
+.content__navbar--list,.content__navbar--footer {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 30px 5px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+hr {
+    background-color: rgb(22, 21, 21);
+    margin: 20px 250px;
+}
+
+span {
+    font-style: italic;
+    padding-right: 10px;
+}
+
+nav span {
+    display: none;
+}
+
+p {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 1.5rem 0 1.5rem 1rem;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 20xpx;
+    padding: 0 20px 20px 20px;
+}
+
+/*header*/
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.contenedor {
+    background-color: #f8f8ff;
+    max-width: 120rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__content {
+    margin-left: 1.5rem;
+    align-self: center;
+}
+
+.header__content--logo {
+    width: 30rem;
+    height: 5rem;
+}
+
+.content__navbar {
+    justify-self: end;
+    align-self: center;
+    margin-right: 1.5rem;
+}
+
+/*h1 inicio*/
+.imagen__inicio {
+    background-image: url(./assets/img-inicio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 30rem;
+    text-align: right;
+    margin: 0 1rem 2rem 0;
+    padding: 2rem;
+}
+
+.imagen__inicio h1 {
+    position: relative;
+    color: #fff;
+    top: 25rem;
+}
+
+video {
+    width: 100%;
+    height: 35rem;
+    margin-bottom: 2rem;
+}
+
+.nosotros h2 {
+    font-size: 30px;
+    padding: 2rem 1.5rem;
+}
+
+/*pilares*/
+.pilares__content {
+    margin-top: 2rem;
+}
+/*aca la idea es que la segunda imagen y el segundo texto esten invertidos de lugar, pero no lo estoy logrando con order*/
+.pilares__content--card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pilares__img2{
+    order: 2;
+}
+.pilares__description2{
+    order: 1;
+}
+
+.pilares__img1,
+.pilares__img2 {
+    width: 35rem;
+    height: 20rem;
+    margin: 1rem 3rem;
+    border-radius: 0.5rem;
+}
+
+.pilares__content--card p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 3rem;
+    padding: 2rem;
+}
+
+.pilares__img2 {
+    order: 2;
+}
+
+.pilares__description2 {
+    order: 1;
+}
+
+/*services*/
+
+.services__grid {
+    margin: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    justify-items: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 1rem 0;
+    border: 1px solid rgb(160, 157, 157);
+    width: 15rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.card__header img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.card--link {
+    text-decoration: underline;
+    text-transform: lowercase;
+    font-weight: bold;
+    background-color: rgba(236, 181, 119, 0.8);
+    margin: 0.1rem 0.5rem;
+    padding: 0.1rem 0.5rem 0.3rem 0.5rem;
+    color: #483d8b;
+}
+
+/*galery*/
+.img__galery {
+    margin-bottom: 2rem;
+}
+
+.img__galery--grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    justify-items: center;
+    margin: 0 3rem;
+}
+
+.img__content {
+    width: 22rem;
+    height: 20rem;
+}
+
+/*contacto*/
+
+.info__content {
+    height: 30rem;
+}
+
+.content__address {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+iframe {
+    width: 20rem;
+    height: 20rem;
+    margin-left: 5rem;
+}
+
+.content__lista {
+    width: 20rem;
+    margin-left: 3rem;
+}
+
+.content__lista--contacto {
+    display: flex;
+    margin: 2rem 0 2rem 3rem;
+}
+
+.content__lista--contacto p {
+    align-self: center;
+}
+
+.contacto__icono {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.content--contacto {
+    margin-right: 4rem;
+    text-align: center;
+}
+
+.content--contacto h3 {
+    margin: 0 1rem;
+    padding: 2rem 2rem;
+}
+
+.boton {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer--pages {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+}
+
+.content__navbar--footer a {
+    margin: 0;
+}
+
+.footer__copyright {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+.footer__copyright--pages {
+    margin-top: 2rem;
+}
+
+.footer__icons {
+    align-self: center;
+}
+
+/*page services*/
+h2.titulo__pages {
+    font-size: 36px;
+    text-align: center;
+}
+.mantenimiento--info p {
+    text-align: justify;
+    margin: 1rem 2rem;
+}
+
+.img__servicios {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto
+}
+
+.img__servicios img {
+    width: 20rem;
+    height: 20rem;
+}
+/*no estoy pudiendo ponerle viñetas, probe con li, ul y no aparecen*/
+.lista--mant {
+    list-style-type: circle;
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+.lista--mant li {
+    display: block;
+}
+
+.contenedor__mantenimiento {
+    width: 100%;
+    background-color: rgba(236, 181, 119, 0.8);
+    border-radius: 2rem;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "mantenimiento--info   img__servicios--mant"
+        "lista__pages--servicio img__servicios--mant";
+}
+
+.mantenimiento--info {
+    grid-area: mantenimiento--info;
+    margin: 1rem 30rem 1rem 3rem;
+    padding: 0 1rem;
+}
+
+.lista__pages--servicio {
+    grid-area: lista__pages--servicio;
+    margin: 0 4rem 0 7rem;
+    padding: 0 4rem 0 5rem;
+}
+
+.img__servicios--mant {
+    grid-area: img__servicios--mant;
+}
+
+.img__servicios--mant img {
+    width: 20rem;
+    height: 15rem;
+    position: absolute;
+    right: 10rem;
+    top: 4rem;
+
+}
+.info__servicios {
+    background-color: rgba(236, 181, 119, 0.8);
+    border-radius: 2rem;
+    margin: 2rem 0rem 1rem 0rem;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+/*page galery*/
+.galery__blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 0.5rem;
+    row-gap: 3rem;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.galery__blog img {
+    width: 20rem;
+    height: 20rem;
+}
+
+/*page about us*/
+.nosotros{
+    margin: 0 2rem;
+    padding: 0 1rem 2rem 1rem;
+}
+.nosotros p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 3rem 1rem 3rem;
+    margin: 0 6rem 1rem 6rem;
+}
+
+/*page contact us*/
+.titulo__contacto img {
+    width: 70rem;
+    height: 30rem;
+    margin: 0rem 2rem 1rem 8rem;
+    position: relative;
+}
+
+.titulo__contacto h2 {
+    color: #f8f8ff;
+    font-size: 28px;
+    font-style: italic;
+    position: absolute;
+    top: 32rem;
+    left: 62rem;
+}
+
+.formulario {
+    background-color: rgba(236, 181, 119, 0.8);
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    margin-left: 3rem;
+    margin-right: 15rem;
+    margin-bottom: 3rem;
+}
+
+.formulario h2 {
+    font-size: 26px;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 0.3rem;
+    margin: 0.5rem 1rem 1rem 0.5rem;
+    display: block;
+}
+
+textarea {
+    margin-left: 7rem;
+}
+
+.nombre,
+.email {
+    display: inline;
+}
+
+.telefono__block {
+    display: block
+}
+
+.textarea__block {
+    display: block;
+}
+
+label {
+    margin: 1rem;
+}
+
+.telefono {
+    display: flex;
+}
+
+button {
+    border-radius: 0.4rem;
+    margin: 1rem 0.5rem 1rem 7rem;
+    font-size: 11px;
+}
+
+.contact__contacto {
+    margin:3rem 1rem 0 3rem ;
+    padding-left: 3rem;
+}
+
+/*mobile last*/
+@media(max-width: 768px) {
+/*index*/ 
+    /*header*/
+    .contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .content__navbar {
+        margin-bottom: 1rem;
+    }
+
+    /*inicio*/
+    .imagen__inicio {
+        margin:0;
+        text-align: center;
+    }
+
+    .imagen__inicio h1 {
+        position: relative;
+        top: 14rem;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
+    hr {
+        width: 25rem;
+        position: relative;
+        margin: 2rem auto;
+        left: 2rem;
+    }
+
+    /*pilares*/
+    .pilares__content--card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .pilares__content--card img{
+        display: block;
+        width: 35rem;
+    }
+
+    .pilares__content--card p {
+        display: block;
+        font-size: 18px;
+        line-height: 1.5; 
+        text-align:center;      
+    }
+
+    /*servicios*/
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+        row-gap: 2rem;
+        justify-items: center;
+    }
+
+    /*galery*/
+    .img__galery--grid {
+        
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+        justify-content: center;
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    .img__galery h2{
+        display: inline;
+        margin: 2rem;
+    }
+
+    .img__content {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    /*contacto*/
+    .info__content {
+        width: 100%;
+        height: 40rem;
+    }
+    .info__content h2{
+        display: inline;
+        
+    }
+    .content__address {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr 1fr;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    iframe {
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    .content--contacto {
+        position: relative;
+        left: 15rem;
+        top: 5rem;
+    }
+
+    .content__lista--contacto {
+        margin: 1rem
+    }
+
+    .content__lista {
+        margin: 0;
+    }
+
+    .content__lista p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .content__navbar--footer{
+        display: none;
+    }
+    .footer__copyright{
+        margin-top: 1.5rem ;
+        margin-right: 1rem;
+    }
+    .footer__icons{
+        margin-top: 0.5rem;
+    }
+/*pages*/
+/*about us*/
+.footer--pages{
+    justify-content: space-evenly;
+}
+.footer__copyright--pages{
+    margin-top: 1.5rem;
+}
+/*page services*/
+.img__servicios img{
+    width: 15rem;
+    height: 15rem;
+    
+}
+.contenedor__mantenimiento {
+    grid-template-areas:
+        "mantenimiento--info   img__servicios--mant"
+        "lista__pages--servicio lista__pages--servicio";
+}
+.img__servicios--mant img{
+    left: 20rem;
+}
+
+/*page galery*/
+.galery__blog{
+    grid-template-columns: repeat(2, 1fr);
+}
+/*page contact us*//*se me genera un scroll horizontal, no me doy cuenta porque*/
+.titulo__contacto img{
+    width: 100%;
+    margin: 0 auto;
+}
+.titulo__contacto h2 {
+    font-size: 3.5rem;
+    top: 18rem;
+    left: 14rem;
+}
+label,input{
+    display: block;
+}
+.telefono {
+    display: block;
+}
+.textarea{
+    margin-left: 3rem;
+}
+.button,.boton{
+    margin: 1rem 3rem
+}
+}
+@media(max-width:480px) {
+    .contenedor {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .header__content{
+        width: 70%;
+    }
+
+    .header__content--logo {
+        width: 80%;
+    }
+
+    .content__navbar--list {
+        display: none;
+    }
+
+    nav span {
+        display: inline-block;
+        font-size: 22px;
+        font-style: normal;
+    }
+
+    hr {
+        display: inline-block;
+        width: 10rem;
+        margin: 1rem 3rem;
+        left: 11rem;
+    }
+    h1.titulo__inicio{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    /*pilares*/
+    .pilares__content {
+        margin: 0 1rem;
+    }
+   
+    .pilares__content--card img {
+        align-items: center;
+        margin: 0.5rem 0.5rem 0.5rem 1rem;
+        padding: 0.5rem;
+    }
+    .pilares__img1,.pilares__img2{
+        border-radius: 1rem;
+    }
+    .pilares__content--card p {
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0.5rem 1rem 0.5rem 2rem;
+        padding: 1rem 2rem 1rem 1rem;
+    }
+
+    /*services*/
+/*tuve que cambiar el wireframe porque no entraban dos cards por fila*/
+    .services{
+        padding-left: 2rem;
+    }
+    .services__grid {
+        grid-template-columns: 1fr;
+        margin-left:3rem;
+    }
+    .card {
+        height: 25rem;
+    }
+
+    .card__header img {
+        margin: 1rem 0;
+    }
+
+    .services__grid p {
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .card--link {
+        margin-top: 5rem;
+    }
+    /*galery*//*tuve que cambiar el wireframe porque no entraban las imagenes*/
+    .img__galery {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .img__galery h2{
+        margin: 2rem;
+    }
+    
+    .img__galery--grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin-top: 2rem;
+    }
+
+    .img__content {
+        width: 25rem;
+    }
+
+    /*contacto*/
+    .info__content {
+        width: 100%;
+        height: 50rem;
+        margin-top: 2rem;
+        padding: 0.2rem;
+        text-align: center;
+    }
+        
+    .content__address {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        margin: 1rem 3rem 1rem 0.5rem;
+        width: 20rem;
+        height: 20rem;
+        
+    }
+    .content__lista{
+        margin-top: 2rem;
+    }
+    .content--contacto {
+       grid-area: content--contacto;
+       margin: 0%;
+       left: 1rem;
+       top: 2rem;
+    }
+
+    .content--contacto h3 {
+        font-size: 18px;
+    }
+
+    .content__lista {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .content__lista--contacto p {
+        margin-left: 1rem;
+    }
+    .boton {
+        letter-spacing: 1px;
+        padding: 1rem 4rem;
+    }
+    /*footer*/ 
+    .footer {
+        justify-content: center;
+        height: 5rem;
+    }
+    .content__navbar--footer {
+        display: none;
+    }
+    
+    .footer__copyright {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contacto__icono {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0.5rem;
+    }
+    /*pages*/
+    /*page about us*/
+    .nosotros h2 {
+        font-size: 26px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .nosotros p {
+        font-size: 18px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    /*footer*/
+    .footer--pages{
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+    }
+    .footer__copyright--pages{
+        font-size: 13px;
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+    }
+    /*page services*/
+    h2.titulo__pages{
+        font-size: 24px;
+    }
+    .contenedor__mantenimiento{
+        grid-template-areas: 
+        "mantenimiento--info"
+        "lista__pages--servicio"
+    }
+    .mantenimiento--info,.lista__pages--servicio,.info__servicios{
+        text-align: center;
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    .mantenimiento--info p{
+        text-align: center;
+    }
+    .img__servicios--mant{
+        display: none;
+    }
+    .img1__servicios,.img3__servicios{
+        display: none;
+    }
+    img.img2__servicios{
+        width: 25rem;
+        height: 20rem;
+    }
+    /* page galery*/
+    /*tuve que cambiar el wireframe porque no me entraban dos imagenes*/
+    .galery__blog{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    /*page contact us*//*se me genera un scroll horizntal, creo que tiene que ver con el formulario*/
+    .titulo__contacto h2{
+        font-size: 1.5rem;
+        left: 7rem;
+        top: 12rem;
+    }
+    .titulo__contacto img{
+        height: 20rem;
+    }
+    .formulario{
+          margin:auto;
+          padding: 0.5rem;
+    }
+    textarea{
+        margin-left: 0.5rem 
+    }
+    button{
+    margin: 0.5rem 0.5rem 0.5rem 6rem;
+    font-size: 10px;
+    }
+    button.boton{
+        padding: 0.4rem;
+    }
+    .contact__contacto{
+        margin: 1rem auto;
+        padding: 0.5rem;
+    }
+}
