@@ -118,6 +118,15 @@ footer{
     align-self: center;
     margin-right: 1.5rem;
 }
+/*transition*/
+.content__navbar--list a{
+    transition: background-color 0.5s, underline 0.5s ;
+    padding: 1rem;
+}
+.content__navbar--list a:hover{
+    background-color: rgba(198, 250, 174, 0.8);
+   text-decoration: underline;
+}
 
 /*h1 inicio*/
 .imagen__inicio {
@@ -137,16 +146,17 @@ footer{
     color: #fff;
     top: 25rem;
 }
-
-video {
-    width: 100%;
-    height: 35rem;
-    margin-bottom: 2rem;
+/*animaciones*/
+h1{
+    animation: h1Moves 2s alternate;
 }
-
-.nosotros h2 {
-    font-size: 30px;
-    padding: 2rem 1.5rem;
+@keyframes h1Moves{
+    0%{
+        right: 50rem;
+    }
+    100%{
+        right:0.2rem;
+    }
 }
 
 /*pilares*/
@@ -223,9 +233,13 @@ video {
     background-color: rgba(236, 181, 119, 0.8);
     margin: 0.1rem 0.5rem;
     padding: 0.1rem 0.5rem 0.3rem 0.5rem;
-    color: #483d8b;
+    color: rgb(20, 13, 59);
+    transition: font-size 0.3s;
+    
 }
-
+.card--link:hover{
+    font-size: larger;
+}
 /*galery*/
 .img__galery {
     margin-bottom: 2rem;
@@ -244,13 +258,18 @@ h2.galery__index,.contacto__index{
     justify-items: center;
     margin: 0 3rem;
 }
-
+/*transition*/
+.img__content:hover{
+    transform: scale(1.1);
+    opacity:0.5;
+}
 .img__content {
     width: 22rem;
     height: 20rem;
     /*modificacion imagenes*/
     border-radius: 0.5rem;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.30s, opacity 0.3s;
 }
 
 /*contacto*/
@@ -308,8 +327,13 @@ iframe {
     border-right-width: 2px;
     border-bottom-width: 2px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: background-color 1s, font-size 1s;
 }
+.boton:hover{
+        background-color:rgba(236, 181, 119, 0.8);
+        font-size: larger;
 
+}
 /*footer*/
 .footer {
     display: flex;
@@ -361,6 +385,16 @@ h2.titulo__services {
     position: absolute;
     top: 34rem;
     left: 45rem;
+    animation: h2Moves 2s alternate;
+}
+/*animacion*//*no queda perfecta la animacion*/
+@keyframes h2Moves{
+    0%{
+        top:10rem;
+    }
+    100%{
+        top:34rem;
+    }
 }
 .mantenimiento--info p {
     text-align: justify;
@@ -448,6 +482,16 @@ h2.titulo__galery {
     position: absolute;
     top: 32rem;
     left: 45rem;
+    animation: h2Moves 2s alternate;
+}
+/*animacion*//*no queda perfecta la animacion*/
+@keyframes h2Moves{
+    0%{
+        top:10rem;
+    }
+    100%{
+        top:32rem;
+    }
 }
 .galery__subtitulo{
     color: rgb(20, 13, 59);
@@ -481,6 +525,7 @@ video {
     margin-bottom: 2rem;
     position: relative;
 }
+
 h2.titulo__nosotros {
     color: #f8f8ff;
     font-size: 28px;
@@ -488,12 +533,24 @@ h2.titulo__nosotros {
     position: absolute;
     top: 32rem;
     left: 50rem;
+    animation: h2Moves 2s alternate;
+}
+/*animacion*/
+@keyframes h2Moves{
+    0%{
+        top:5rem;
+    }
+    100%{
+        top:32rem;
+    }
 }
 .nosotros{
     margin: 0 2rem;
     padding: 0 1rem 2rem 1rem;
 }
 .nosotros h2{
+    font-size: 30px;
+    padding: 2rem 1.5rem;
     text-decoration: underline;
     color: rgb(20, 13, 59);
 }
@@ -520,6 +577,17 @@ h2.titulo__nosotros {
     position: absolute;
     top: 32rem;
     left: 62rem;
+    animation: h2Moves 2s alternate;
+}
+
+/*animacion*/
+@keyframes h2Moves{
+    0%{
+        top:1rem;
+    }
+    100%{
+        top:32rem;
+    }
 }
 
 .formulario {
