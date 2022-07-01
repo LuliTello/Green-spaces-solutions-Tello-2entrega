@@ -6,7 +6,15 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom, #1D8348, #82E0AA);
+    background-image: linear-gradient(to bottom, #1D8348, #82E0AA);
+/*modificacion para que no haya 2 bodys*/
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: 
+"header"
+"main"
+"footer";
 }
 
 h1 {
@@ -16,6 +24,7 @@ h1 {
 
 .content__navbar--list,.content__navbar--footer {
     list-style-type: none;
+    color: #483d8b;
 }
 
 li {
@@ -63,7 +72,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20xpx;
+    font-size: 20px;
     padding: 0 20px 20px 20px;
 }
 
@@ -144,13 +153,14 @@ video {
 .pilares__content {
     margin-top: 2rem;
 }
-/*aca la idea es que la segunda imagen y el segundo texto esten invertidos de lugar, pero no lo estoy logrando con order*/
+
 .pilares__content--card {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pilares__img2{
+/*modificacion para hacer el efecto diagonal*/
+.pilares__div{
     order: 2;
 }
 .pilares__description2{
@@ -220,6 +230,11 @@ video {
 .img__galery {
     margin-bottom: 2rem;
 }
+/*modificacion*/
+h2.galery__index,.contacto__index{
+    color: rgb(20, 13, 59);
+    text-decoration: underline;
+}
 
 .img__galery--grid {
     display: grid;
@@ -233,6 +248,9 @@ video {
 .img__content {
     width: 22rem;
     height: 20rem;
+    /*modificacion imagenes*/
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*contacto*/
@@ -240,7 +258,6 @@ video {
 .info__content {
     height: 30rem;
 }
-
 .content__address {
     display: flex;
     justify-content: space-around;
@@ -322,6 +339,10 @@ iframe {
 
 .footer__icons {
     align-self: center;
+}
+/*modificacion*/
+.contacto__icono:hover{
+    cursor: pointer;
 }
 
 /*page services*/
