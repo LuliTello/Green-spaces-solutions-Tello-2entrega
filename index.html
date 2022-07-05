@@ -25,7 +25,7 @@
 <body>
     <header class="header">
         <!--navegacion boot-->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
                     <img class="header__content--logo" src="./faviconio-logo/logo 2.png" alt="logo-empresa">
@@ -140,47 +140,42 @@
 
         </section>
         <hr />
+        <!--bootstrap-->
         <section class="container-fluid">
-
+            <h2 class="galery__index text-decoration-underline h2">NUESTRO TRABAJO</h2>
             <div class="container">
-                <h2 class="galery__index text-decoration-underline h2">NUESTRO TRABAJO</h2>
+
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <!--las imagenes quedan de altos distintos-->
+
                             <a href="./galery.html">
-                                <img src="./assets/img-jardin1.jpg" class=" img__content d-block"
-                                    alt="carousel1">
+                                <img src="./assets/img-jardin1.jpg" class=" img__content d-block" alt="carousel1">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="./galery.html">
-                                <img src="./assets/img-jardin2.jpg" class="  img__content d-block"
-                                    alt="carousel2">
+                                <img src="./assets/img-jardin2.jpg" class="  img__content d-block" alt="carousel2">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="./galery.html">
-                                <img src="./assets/img-jardin3.jpg" class="  img__content d-block"
-                                    alt="carousel3">
+                                <img src="./assets/img-jardin3.jpg" class="  img__content d-block" alt="carousel3">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="./galery.html">
-                                <img src="./assets/img-riego2.jpg" class="  img__content d-block"
-                                    alt="carousel4">
+                                <img src="./assets/img-riego2.jpg" class="  img__content d-block" alt="carousel4">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="./galery.html">
-                                <img src="./assets/img-riego3.jpg" class="  img__content d-block"
-                                    alt="carousel5">
+                                <img src="./assets/img-riego3.jpg" class="  img__content d-block" alt="carousel5">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="./galery.html">
-                                <img src="./assets/img-riego1.jpg" class="  img__content d-block"
-                                    alt="carousel6">
+                                <img src="./assets/img-riego1.jpg" class="  img__content d-block" alt="carousel6">
                             </a>
                         </div>
                     </div>
@@ -208,17 +203,18 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="content__lista">
+                        <!--bootstrap-->
                         <div class="content__lista--contacto">
-                            <img class="contacto__icono" src="./assets/icono-direccion.png" alt="icono-direccion">
-                            <p>Ruta 8 y Alberdi, Pergamino, Bs.As</p>
+                            <i class="bi bi-geo-alt fs-1"></i>
+                            <p class="mt-3">Ruta 8 y Alberdi, Pergamino, Bs.As</p>
                         </div>
                         <div class="content__lista--contacto">
-                            <img class="contacto__icono" src="./assets/icono-celular.png" alt="icono-telefono">
-                            <p>2477-15986347</p>
+                            <i class="bi bi-phone-vibrate fs-1"></i>
+                            <p class="mt-3 ml-3">2477-15986347</p>
                         </div>
                         <div class="content__lista--contacto">
-                            <img class="contacto__icono" src="./assets/icono-mail.png" alt="icono-mail">
-                            <p> greenss@gmail.com.ar</p>
+                            <i class="bi bi-envelope fs-1 "></i>
+                            <p class="mt-3 ml-3"> greenss@gmail.com.ar</p>
                         </div>
                     </div>
                     <div class="content--contacto">
@@ -231,8 +227,8 @@
 
     </main>
 
-    <footer class="container-fluid">
-        <div class="contenedor footer">
+    <footer class="footer">
+        <div class="contenedor footer container">
             <div class="content__navbar">
                 <nav>
 
@@ -248,10 +244,17 @@
             <div>
                 <p class="footer__copyright">Copyright &copy; 2022. All rights reserved</p>
             </div>
+            <!--bootstrap-->
             <div class="footer__icons">
-                <img class="contacto__icono" src="./assets/icono-fcbk.png" alt="icono-fcbk">
-                <img class="contacto__icono" src="./assets/icono-ig.png" alt="icono-ig">
-                <img class="contacto__icono" src="./assets/icono-linkedin.png" alt="icono-lk">
+                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://instagram.com" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </div>
 
         </div>
