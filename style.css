@@ -312,7 +312,7 @@ iframe {
 .footer--pages {
     display: flex;
     justify-content: space-evenly;
-    height: 5rem;
+    height: 100%;
 }
 .content__navbar{
     margin-top: 4rem;
@@ -329,6 +329,7 @@ ul.content__navbar--footer{
 
 .footer__copyright--pages {
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .footer__icons {
@@ -803,6 +804,9 @@ h2.titulo__nosotros{
 .footer__copyright--pages{
     margin-top: 1.5rem;
 }
+p.footer__copyright--pages{
+    padding-top: 1.5rem;
+}
 /*page services*/
 .img__servicios img{
     width: 15rem;
@@ -1091,10 +1095,11 @@ label,input{
     }
     
     /*footer*/
+    /*me queda un margen abajo del footer del html pero puse height 100%*/
     .footer--pages{
         display: flex;
         justify-content: center;
-        height: 5rem;
+        height: 100%;
     }
     .footer__copyright--pages{
         font-size: 13px;
