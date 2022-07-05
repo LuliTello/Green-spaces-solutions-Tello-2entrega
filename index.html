@@ -24,36 +24,49 @@
 
 <body>
     <header class="header">
-        <div class="contenedor">
-            <div class="header__content">
-                <a href="index.html">
+        <!--navegacion boot-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
                     <img class="header__content--logo" src="./faviconio-logo/logo 2.png" alt="logo-empresa">
                 </a>
-            </div>
-            <div class="content__navbar">
-                <nav>
-                    <ul class="content__navbar--list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="galery.html">Galery</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav small fw-bold ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./galery.html">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./contact-us.html">Contact Us</a>
+                        </li>
+
                     </ul>
-                    <span>🍔</span>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
-        <section>
+        <section class="container">
 
             <div class="imagen__inicio">
                 <h1 class="titulo__inicio">Hacemos de un espacio <span>Tu espacio</span></h1>
             </div>
         </section>
         <hr />
-        <section>
+        <section class="container">
             <!--info preliminar de nuestra empresa-->
             <div class="pilares__content">
                 <div class="pilares__content--card">
@@ -77,7 +90,7 @@
             </div>
         </section>
         <hr />
-        <section>
+        <section class="container">
             <!--info preliminar de nuestros servicios-->
             <div class="services__grid">
                 <article class="card">
@@ -127,37 +140,68 @@
 
         </section>
         <hr />
-        <section>
-            <!--galeria de algunas imagenes luego ampliada en galery-->
-            <div class="img__galery">
-                <h2 class="galery__index">NUESTRO TRABAJO</h2>
-                <div class="img__galery--grid">
-                    <a href="./galery.html">
-                        <img class="img__content" src="./assets/img-jardin1.jpg" alt="img-galeria">
-                    </a>
-                    <a href="./galery.html">
-                        <img class="img__content" src="./assets/img-jardin2.jpg" alt="img-galeria2">
-                    </a>
-                    <a href="./galery.html">
-                        <img class="img__content" src="./assets/img-jardin3.jpg" alt="img-galeria3">
-                    </a>
-                    <a href="./galery.html">
-                        <img class="img__content" src="./assets/img-riego2.jpg" alt="img-galeria4">
-                    </a>
-                    <a href="./galery.html">
-                        <img class="img__content" src="./assets/img-riego3.jpg" alt="img-galeria5">
-                    </a>
-                    <a href="./galery.html">
-                        <img class="img__content" src="./assets/img-riego1.jpg" alt="img-galeria6">
-                    </a>
+        <section class="container-fluid">
+
+            <div class="container">
+                <h2 class="galery__index text-decoration-underline h2">NUESTRO TRABAJO</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!--las imagenes quedan de altos distintos-->
+                            <a href="./galery.html">
+                                <img src="./assets/img-jardin1.jpg" class=" img__content d-block"
+                                    alt="carousel1">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./galery.html">
+                                <img src="./assets/img-jardin2.jpg" class="  img__content d-block"
+                                    alt="carousel2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./galery.html">
+                                <img src="./assets/img-jardin3.jpg" class="  img__content d-block"
+                                    alt="carousel3">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./galery.html">
+                                <img src="./assets/img-riego2.jpg" class="  img__content d-block"
+                                    alt="carousel4">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./galery.html">
+                                <img src="./assets/img-riego3.jpg" class="  img__content d-block"
+                                    alt="carousel5">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./galery.html">
+                                <img src="./assets/img-riego1.jpg" class="  img__content d-block"
+                                    alt="carousel6">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
         <hr />
-        <section>
+        <section class="container">
             <!--seccion de contacto-->
             <div class="info__content">
-                <h2 class="contacto__index">DONDE ESTAMOS?</h2>
+                <h2 class="contacto__index text-decoration-underline h2">DONDE ESTAMOS?</h2>
                 <div class="content__address">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.138353751859!2d-60.59769055018443!3d-33.91183858054936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84ab9b0ae1021%3A0x98260abc78c916b3!2sRuta%20Nacional%208%20%26%20Alberdi%2C%20Pergamino%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654104561027!5m2!1ses-419!2sar"
@@ -187,7 +231,7 @@
 
     </main>
 
-    <footer>
+    <footer class="container-fluid">
         <div class="contenedor footer">
             <div class="content__navbar">
                 <nav>

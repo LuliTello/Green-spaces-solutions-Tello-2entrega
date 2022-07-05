@@ -7,14 +7,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(to bottom, #1D8348, #82E0AA);
-/*modificacion para que no haya 2 bodys*/
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-grid-template-areas: 
-"header"
-"main"
-"footer";
 }
 
 h1 {
@@ -75,25 +67,6 @@ h3 {
     padding: 0 20px 20px 20px;
 }
 
-/*header*/
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
 .contenedor {
     background-color: #f8f8ff;
     max-width: 120rem;
@@ -112,11 +85,11 @@ footer{
     height: 5rem;
 }
 
-.content__navbar {
+/*.content__navbar {
     justify-self: end;
     align-self: center;
     margin-right: 1.5rem;
-}
+}*/
 /*transition*/
 .content__navbar--list a{
     transition: background-color 0.5s, underline 0.5s ;
@@ -178,7 +151,7 @@ h1{
 
 .pilares__img1,
 .pilares__img2 {
-    width: 35rem;
+    width: 30rem;
     height: 20rem;
     margin: 1rem 3rem;
     border-radius: 0.5rem;
@@ -187,24 +160,24 @@ h1{
 .pilares__content--card p {
     text-align: center;
     font-size: 1.6rem;
-    margin: 0 3rem;
-    padding: 2rem;
+    margin: 0 1rem;
+    padding: 1rem;
 }
 
 /*services*/
 
 .services__grid {
-    margin: 1rem 2rem;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
+    column-gap: 1rem;
     justify-items: center;
 }
 
 .card {
     background-color: #fff;
     padding: 20px;
-    margin: 1rem 0;
+    margin: 1rem auto;
     border: 1px solid rgb(160, 157, 157);
     width: 15rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -222,8 +195,8 @@ h1{
     text-transform: lowercase;
     font-weight: bold;
     background-color: rgba(236, 181, 119, 0.8);
-    margin: 0.1rem 0.5rem;
-    padding: 0.1rem 0.5rem 0.3rem 0.5rem;
+    margin: 0.1rem 0.3rem;
+    padding: 0.1rem 0.3rem 0.3rem 0.3rem;
     color: rgb(20, 13, 59);
     transition: font-size 0.3s;
     
@@ -241,7 +214,7 @@ h2.galery__index,.contacto__index{
     text-decoration: underline;
 }
 
-.img__galery--grid {
+/*.img__galery--grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
@@ -249,18 +222,18 @@ h2.galery__index,.contacto__index{
     justify-items: center;
     margin: 0 3rem;
 }
-/*transition*/
+/*transition
 .img__content:hover{
     transform: scale(1.1);
     opacity:0.5;
-}
+}*/
 .img__content {
-    width: 22rem;
-    height: 20rem;
+    width: 100%;
+    height: 30rem;
     /*modificacion imagenes*/
     border-radius: 0.5rem;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
-    transition: transform 0.30s, opacity 0.3s;
+    /*transition: transform 0.30s, opacity 0.3s;*/
 }
 
 /*contacto*/
@@ -336,11 +309,9 @@ iframe {
     justify-content: space-evenly;
     height: 5rem;
 }
-
-.content__navbar--footer a {
-    margin: 0;
+.content__navbar{
+    margin-top: 4rem;
 }
-
 .footer__copyright {
     font-size: 13px;
     font-weight: bold;
