@@ -27,7 +27,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
-    padding: 30px 2px;
+    padding: 0.5rem 0.5rem;
     font-size: 13px;
     font-weight: bold;
 }
@@ -261,7 +261,7 @@ iframe {
 
 .content__lista--contacto {
     display: flex;
-    margin: 2rem 0 2rem 3rem;
+    margin: 2rem 0 1.5rem 3rem;
 }
 
 .content__lista--contacto p {
@@ -329,11 +329,12 @@ ul.content__navbar--footer{
 
 .footer__copyright--pages {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
-
 .footer__icons {
     align-self: center;
+    margin-top: 0.5rem;
 }
 /*modificacion*/
 .contacto__icono:hover{
@@ -554,8 +555,8 @@ h2.titulo__nosotros {
     font-size: 28px;
     font-style: italic;
     position: absolute;
-    top: 45rem;
-    left: 50rem;
+    top: 38rem;
+    left: 45rem;
     animation: h2Moves 2s alternate;
 }
 
@@ -565,17 +566,19 @@ h2.titulo__nosotros {
         top:1rem;
     }
     100%{
-        top:45rem;
+        top:38rem;
     }
 }
 
 .formulario {
     background-color: rgba(236, 181, 119, 0.8);
     border-radius: 2rem;
-    padding: 2rem 4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+   /* padding: 2rem 4rem;
     margin-left: 3rem;
     margin-right: 15rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;*/
 }
 
 .formulario h2 {
@@ -810,12 +813,13 @@ h2.titulo__nosotros{
 
 .footer--pages{
     justify-content: space-evenly;
+    
 }
 .footer__copyright--pages{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 p.footer__copyright--pages{
-    padding-top: 1.5rem;
+    padding-top: 2rem;
 }
 /*page services*/
 .img__servicios img{
@@ -942,6 +946,20 @@ label,input{
         font-size: 28px;
         font-weight: bold;
     }
+    .imagen__inicio h1 {
+        top: 10rem;
+        right: 0.5rem;
+        animation: h1Moves 1s alternate;
+    }
+    /*animaciones*/
+    @keyframes h1Moves{
+        0%{
+            right: 15rem;
+        }
+        100%{
+            right:0.5rem;
+        }
+    }
 
     /*pilares*/
     .pilares__content {
@@ -1038,7 +1056,7 @@ label,input{
        grid-area: content--contacto;
        margin: 0%;
        left: 1rem;
-       top: 2rem;
+       top: 1rem;
     }
 
     .content--contacto h3 {
@@ -1082,7 +1100,7 @@ label,input{
     /*pages*/
     /*page about us*/
     h2.titulo__nosotros{
-        top: 9rem;
+        top: 12rem;
         left: 3rem;
         animation: h2Moves 2s alternate;
     }
@@ -1092,7 +1110,7 @@ label,input{
             top:1rem;
         }
         100%{
-            top:9rem;
+            top:12rem;
         }
     }
     .nosotros h2 {
@@ -1108,7 +1126,7 @@ label,input{
     }
     
     /*footer*/
-    /*me queda un margen abajo del footer del html pero puse height 100%*/
+    
     .footer--pages{
         display: flex;
         justify-content: center;
@@ -1116,8 +1134,10 @@ label,input{
     }
     .footer__copyright--pages{
         font-size: 13px;
-        margin-top: 1.5rem;
-        padding: 0.5rem;
+        padding:0;
+    }
+    p.footer__copyright--pages{
+        padding-top: 0.5rem;
     }
     /*page services*/
 
@@ -1199,18 +1219,27 @@ label,input{
         height: 20rem;
     }
     .formulario{
-          margin:auto;
+          margin:1rem auto;
           padding: 0.5rem;
     }
     textarea{
         margin-left: 0.5rem 
     }
-    button{
+    /*button{
     margin: 0.5rem 0.5rem 0.5rem 6rem;
     font-size: 10px;
     }
     button.boton{
         padding: 0.4rem;
+    }*/
+    /*boot*/
+    .btn{
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    .btn__form{
+        display: flex;
+        justify-content: space-evenly;
     }
     .contact__contacto{
         margin: 1rem auto;

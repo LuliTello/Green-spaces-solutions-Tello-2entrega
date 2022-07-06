@@ -24,85 +24,107 @@
 
 <body>
     <header class="header">
-        <div class="contenedor">
-            <div class="header__content">
-                <a href="index.html">
+        <!--navegacion boot-->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
                     <img class="header__content--logo" src="./faviconio-logo/logo 2.png" alt="logo-empresa">
                 </a>
-            </div>
-            <div class="content__navbar">
-                <nav>
-                    <ul class="content__navbar--list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="galery.html">Galery</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav small fw-bold ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./galery.html">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./contact-us.html">Contact Us</a>
+                        </li>
+
                     </ul>
-                    <span>🍔</span>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
-        <section>
+        <section class="container">
 
             <div class="titulo__contacto">
                 <img src="./assets/escribinos.jpg" alt="escribinos">
-                <h2 class="titulo__contacto">Escribinos!</h2>
+                <h2 class="titulo__contacto h2 fw-bold">Escribinos!</h2>
             </div>
         </section>
-        <section>
+        <section class="container">
             <form class="formulario" action="" method="" enctype="">
-                <h2>Hola! Contactanos</h2>
+                <h2 class="h2">Hola! Contactanos</h2>
 
-                <label for="nombre">Nombre y Apellido:</label>
-                <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                    <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
 
-                <label for="email">Email:</label>
-                <input class="email" type="email" name="email" id="email" placeholder="Email">
+                    <label for="email" class="form-label">Email:</label>
+                    <input class="email" type="email" name="email" id="email" placeholder="Email">
+                </div>
                 <div class="telefono">
-                    <label for="telefono">Telefono:</label>
+                    <label for="telefono" class="form-label">Telefono:</label>
                     <input type="text" name="telefono" id="telefono" placeholder="Telefono">
                 </div>
-                <label class="textarea__block" for="consulta">Consultenos</label>
+                <label class="textarea__block form-label" for="consulta">Consultenos</label>
                 <textarea class="textarea__block" name="consulta" id="consulta" cols="35" rows="15"
                     placeholder="Deje su consulta"></textarea>
-
-                <button class="boton" type="submit">ENVIAR!</button>
-                <button class="boton" type="reset">CANCELAR</button>
-
+                <div class="btn__form">
+                    <button class="btn btn-light fw-bold" type="submit">ENVIAR!</button>
+                    <button class="btn btn-light fw-bold" type="reset">CANCELAR</button>
+                </div>
             </form>
         </section>
-        <section>
+        <section class="container">
             <div class="contact__contacto">
-                <h3>Direccion</h3>
+                <h3 class="h3">Direccion</h3>
                 <div class="content__lista">
                     <div class="content__lista--contacto">
-                        <img class="contacto__icono" src="./assets/icono-direccion.png" alt="icono-direccion">
-                        <p>Ruta 8 y Alberdi, Pergamino, Bs.As</p>
+                        <i class="bi bi-geo-alt fs-1 text-black"></i>
+                        <p class="mt-3">Ruta 8 y Alberdi, Pergamino, Bs.As</p>
                     </div>
                     <div class="content__lista--contacto">
-                        <img class="contacto__icono" src="./assets/icono-celular.png" alt="icono-telefono">
-                        <p>2477-15986347</p>
+                        <i class="bi bi-phone-vibrate fs-1 text-black"></i>
+                        <p class="mt-3 ml-3">2477-15986347</p>
                     </div>
                     <div class="content__lista--contacto">
-                        <img class="contacto__icono" src="./assets/icono-mail.png" alt="icono-mail">
-                        <p> greenss@gmail.com.ar</p>
+                        <i class="bi bi-envelope fs-1 text-black "></i>
+                        <p class="mt-3 ml-3"> greenss@gmail.com.ar</p>
                     </div>
                 </div>
         </section>
     </main>
-    <footer>
-        <div class="contenedor footer--pages">
+    <footer class="footer">
+        <div class="container contenedor footer--pages">
 
             <div>
                 <p class="footer__copyright--pages">Copyright &copy; 2022. All rights reserved</p>
             </div>
+            <!--bootstrap-->
             <div class="footer__icons">
-                <img class="contacto__icono" src="./assets/icono-fcbk.png" alt="icono-fcbk">
-                <img class="contacto__icono" src="./assets/icono-ig.png" alt="icono-ig">
-                <img class="contacto__icono" src="./assets/icono-linkedin.png" alt="icono-lk">
+                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://instagram.com" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </div>
 
         </div>
