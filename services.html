@@ -24,60 +24,76 @@
 
 <body>
     <header class="header">
-        <div class="contenedor">
-            <div class="header__content">
-                <a href="index.html">
+        <!--navegacion boot-->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
                     <img class="header__content--logo" src="./faviconio-logo/logo 2.png" alt="logo-empresa">
                 </a>
-            </div>
-            <div class="content__navbar">
-                <nav>
-                    <ul class="content__navbar--list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="galery.html">Galery</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav small fw-bold ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./galery.html">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./contact-us.html">Contact Us</a>
+                        </li>
+
                     </ul>
-                    <span>🍔</span>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
-        <section><!--modificacion-->
+        <section class="container">
             <div class="services__container">
                 <img class="services--img" src="./assets/manten2.jpg" alt="img servicio">
-                <h2 class="titulo__services">Conoce nuestros servicios!</h2>
+                <h2 class="titulo__services h2 fw-bold">Conoce nuestros servicios!</h2>
             </div>
         </section>
-            <section>
-                <div class="contenedor__mantenimiento">
-                    <div class="mantenimiento--info">
-                        <h3>Mantenimiento espacios verdes</h3>
-
-                        <p>Elaboramos planes de mantenimiento específicos para cada Espacio Verde, planificando y
-                            optimizando los recursos.</p>
-                        <p>Contamos con los siguientes servicios:</p>
+        <!--bootstrap-->
+            <section class="container">
+                <div class="row mantenimiento p-5 m-1">
+                    <div class=" col-sm-12 col-md-6 col-lg-6">
+                        <div class="mantenimiento--info">
+                            <h3 class=" text-decoration-underline">Mantenimiento espacios verdes</h3>
+    
+                            <p>Elaboramos planes de mantenimiento específicos para cada Espacio Verde, planificando y
+                                optimizando los recursos.</p>
+                            <p>Contamos con los siguientes servicios:</p>
+    
+    
+                            <ul class="lista--mant">
+                                <li>Forestación</li>
+                                <li>Extracción y Poda de Árboles</li>
+                                <li>Poda en Altura</li>
+                                <li>Poda de Formación</li>
+                                <li>Tratamientos y Manejo Fitosanitario</li>
+                                <li>Planes de Fertilización</li>
+                                <li>Planes de Mejoras</li>
+    
+                            </ul>
+                        </div>
                     </div>
-                    <div class="lista__pages--servicio">
-                        <ul class="lista--mant">
-                            <li>Forestación</li>
-                            <li>Extracción y Poda de Árboles</li>
-                            <li>Poda en Altura</li>
-                            <li>Poda de Formación</li>
-                            <li>Tratamientos y Manejo Fitosanitario</li>
-                            <li>Planes de Fertilización</li>
-                            <li>Planes de Mejoras</li>
-
-                        </ul>
-                    </div>
-                    <div class="img__servicios--mant">
-                        <img src="./assets/poda2.png" alt="poda-altura">
+                    <div class="mantenimiento__img col-sm-12 col-md-6 col-lg-6">
+                        <img class="img-thumbnail w-100 h-20" src="./assets/poda2.png" alt="poda-altura">
                     </div>
                 </div>
-                <div class="info__servicios">
-                    <h3>Sistema de riego</h3>
+                <div class="info__servicios p-5 m-1">
+                    <h3 class=" text-decoration-underline">Sistema de riego</h3>
                     <p>Sistemas de riego automatizados para que el cliente no dependa de las inclemencias del clima</p>
                     <p>Los sistemas de riego son:
                     <p>Aspersion donde el agua en forma de gotas de lluvia, que sale de aspersores o boquillas, cubre la
@@ -86,40 +102,47 @@
                         uso.
                     </p>
                 </div>
-                <div class="info__servicios">
-                    <h3>Paisajismo</h3>
+                <div class="info__servicios p-5 m-1">
+                    <h3 class=" text-decoration-underline">Paisajismo</h3>
                     <p>Ofrecemos servicios de paisajismo y jardineria, adaptando cada proyecto a la necesidad del
                         cliente y su espacio.</p>
                     <p> Realizamos movimientos de tierra, iluminación, plantación de árboles, arbustos y especies de
                         temporada, instalación de césped, panes y cercos y Colocacion de decks y pergolas.
                     </p>
                 </div>
-                <div class="info__servicios">
-                    <h3>Asesoramiento</h3>
+                <div class="info__servicios p-5 m-1">
+                    <h3 class=" text-decoration-underline">Asesoramiento</h3>
                     <p>Asesoramos al cliente y resolvemos problematicas dentro del espacio a trabajar, brindamos presupuestos con la rapidez y detalle para que el
                         cliente tome una decision a conciencia.
                     </p>
                 </div>
             </section>
-            <section>
+            <section class="container">
                 <div class="img__servicios">
-                    <img class="img1__servicios" src="./assets/riego6.JPG" alt="riego aspersion">
-                    <img class="img2__servicios" src="./assets/manten.jpg" alt="cesped">
-                    <img class="img3__servicios" src="./assets/Paisaj3.jpg" alt="paisajismo plano">
+                    <img class="img1__servicios rounded" src="./assets/riego6.JPG" alt="riego aspersion">
+                    <img class="img2__servicios rounded" src="./assets/manten.jpg" alt="cesped">
+                    <img class="img3__servicios rounded" src="./assets/Paisaj3.jpg" alt="paisajismo plano">
                 </div>
             </section>
         
     </main>
-    <footer>
-        <div class="contenedor footer--pages">
+    <footer class="footer">
+        <div class="container contenedor footer--pages">
 
             <div>
                 <p class="footer__copyright--pages">Copyright &copy; 2022. All rights reserved</p>
             </div>
+            <!--bootstrap-->
             <div class="footer__icons">
-                <img class="contacto__icono" src="./assets/icono-fcbk.png" alt="icono-fcbk">
-                <img class="contacto__icono" src="./assets/icono-ig.png" alt="icono-ig">
-                <img class="contacto__icono" src="./assets/icono-linkedin.png" alt="icono-lk">
+                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://instagram.com" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </div>
 
         </div>
