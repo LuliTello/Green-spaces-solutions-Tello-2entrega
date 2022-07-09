@@ -356,40 +356,30 @@ h2.titulo__nosotros {
 
     /*index*/
     /*header*/
-    .contenedor {
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .content__navbar {
-        margin-bottom: 1rem;
-    }
-
-    /*inicio*/
-    .imagen__inicio {
-        margin: 0;
-        text-align: center;
-    }
-
     .imagen__inicio h1 {
         position: relative;
-        top: 14rem;
+        top: 10rem;
+        left: 2rem;
+    }
+     /*animaciones*/
+     @keyframes h1Moves {
+        0% {
+            left: -20rem;
+        }
+
+        100% {
+            left: 2rem;
+        }
     }
 
     hr {
         width: 25rem;
-        position: relative;
         margin: 2rem auto;
-        left: 2rem;
     }
 
     /*pilares*/
     .pilares__content--card {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-
     }
 
     .pilares__content--card img {
@@ -398,10 +388,8 @@ h2.titulo__nosotros {
     }
 
     .pilares__content--card p {
-        display: block;
-        font-size: 18px;
+        font-size: 1.5rem;
         line-height: 1.5;
-        text-align: center;
     }
 
     .pilares__div {
@@ -415,57 +403,30 @@ h2.titulo__nosotros {
     /*servicios*/
     .services__grid {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 0;
-        row-gap: 2rem;
-        justify-items: center;
-    }
-
-    a.card--link {
-        margin-top: 0;
+        gap: 1rem;
     }
 
     /*galery*/
-    /*.img__galery--grid {
-        
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 0.5rem;
-        justify-content: center;
+    
+    h2.galery__index,.content__contacto--index {
         margin: 1rem;
-        padding: 0.5rem;
-    }*/
-    h2.galery__index {
-        display: block;
-        margin: 2rem;
         font-size: 22px;
     }
 
     .img__content {
-        width: 100%;
-    }
-
-    /*modificacion boot*/
-    .img__content {
-        width: 100%;
         height: 20rem;
     }
 
     /*contacto*/
-    .info__content {
-        width: 100%;
+    .content__contacto {
         height: 40rem;
     }
 
-    .info__content h2 {
-        display: inline;
-        font-size: 22px;
-
-    }
-
-    .content__address {
+    .content__contacto--address {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 2fr 1fr;
-        justify-content: center;
+        justify-items: center;
         margin-top: 2rem;
     }
 
@@ -475,41 +436,38 @@ h2.titulo__nosotros {
         margin-bottom: 2rem;
     }
 
-    .content--contacto {
+    .contacto--contacto {
         position: relative;
-        left: 13rem;
-        top: 5rem;
+        left: 14rem;
+        bottom: 1rem;
     }
 
-    .content__lista--contacto {
-        margin: 1rem
+    .content__lista--iconos {
+        margin: 0.5rem
     }
 
-    .content__lista {
-        margin: 0;
-    }
-
-    .content__lista p {
+    .contacto__lista--iconos p{
         font-size: 14px;
     }
-
-    h3 {
-        font-size: 20px;
-    }
-
+/*footer*/
     .footer {
-        display: flex;
         justify-content: space-around;
-        height: 7rem;
+        flex-wrap: wrap;
     }
 
-    .content__navbar--footer {
+    .contenedor__navbar--footer {
         display: none;
     }
 
     .footer__copyright {
-        margin-top: 3rem;
-        margin-right: 4rem;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    p.footer__copyright{
+        font-size: 1rem;
+        margin-right: 5rem;
+        padding-right: 3rem;
     }
 
     .footer__icons {
@@ -540,203 +498,61 @@ h2.titulo__nosotros {
         }
     }
 
-    .footer--pages {
-        justify-content: space-evenly;
-
-    }
-
     .footer__copyright--pages {
         margin-top: 1rem;
+        padding-top: 1rem;
     }
 
-    p.footer__copyright--pages {
-        padding-top: 2rem;
-    }
-
-    /*page services*/
-    .img__servicios img {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    h2.titulo__services {
-        top: 14rem;
-        left: 9rem;
-        animation: h2Moves 2s alternate;
-    }
-
-    .info__servicios,
-    .mantenimiento--info {
-        text-align: center;
-    }
-
-    /*animacion*/
-    @keyframes h2Moves {
-        0% {
-            top: 1rem;
-        }
-
-        100% {
-            top: 14rem;
-        }
-    }
-
-    .contenedor__mantenimiento {
-        grid-template-areas:
-            "mantenimiento--info   img__servicios--mant"
-            "lista__pages--servicio lista__pages--servicio";
-    }
-
-    .img__servicios--mant img {
-        left: 20rem;
-    }
-
-    .formulario {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    .contact__contacto {
-        margin-left: 8rem;
-    }
-
-    /*page galery*/
-    .galery__blog {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    h2.titulo__galery {
-        top: 17rem;
-        left: 12rem;
-        animation: h2Moves 2s alternate;
-    }
-
-    /*animacion*/
-    @keyframes h2Moves {
-        0% {
-            top: 5rem;
-        }
-
-        100% {
-            top: 17rem;
-        }
-    }
-
-    /*page contact us*/
-    .titulo__contacto img {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    h2.titulo__contacto {
-        font-size: 36px;
-        top: 20rem;
-        left: 14rem;
-        animation: h2Moves 2s alternate;
-    }
-
-    /*animacion*/
-    @keyframes h2Moves {
-        0% {
-            top: 5rem;
-        }
-
-        100% {
-            top: 20rem;
-        }
-    }
-
-    label,
-    input {
-        display: block;
-    }
-
-    .telefono {
-        display: block;
-    }
-
-    .textarea {
-        margin-left: 3rem;
-    }
-
-    .button,
-    .boton {
-        margin: 1rem 3rem
-    }
-}
-
+}  
 @media(max-width:480px) {
 
-    /*.contenedor {
-        width: 100%;
-        justify-content: space-around;
-    }
-    .header__content{
-        width: 70%;
-    }*/
-    /*bootstrap*/
     .navbar {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
-    .header__content--logo {
+    .header__logo {
         width: 100%;
     }
 
-    .content__navbar--list {
+    .contenedor__navbar--list {
         display: none;
     }
 
-    /*nav span {
-        display: inline-block;
-        font-size: 22px;
-        font-style: normal;
-    }*/
-
     hr {
-        display: inline-block;
         width: 10rem;
-        margin: 2rem 3rem 0rem 3rem;
-        left: 5rem;
+        margin: 2rem 3rem 0.5rem 8rem;
+    }
+    .imagen__inicio {
+        height: 20rem;
+        margin: 0 auto;
     }
 
     h1.titulo__inicio {
-        font-size: 28px;
+        font-size: 1.5rem;
         font-weight: bold;
-    }
-
-    .imagen__inicio h1 {
-        top: 10rem;
-        right: 0.5rem;
+        text-align: center;
+        margin-right: 2rem;
+        top: 7rem;
         animation: h1Moves 1s alternate;
     }
 
     /*animaciones*/
     @keyframes h1Moves {
         0% {
-            right: 15rem;
+            top: -15rem;
         }
 
         100% {
-            right: 0.5rem;
+            top: 7rem;
         }
     }
 
     /*pilares*/
-    .pilares__content {
-        margin: 0 1rem;
-    }
 
     .pilares__content--card img {
-        align-items: center;
         margin: 0.5rem 0.5rem 0.5rem 1rem;
         padding: 0.5rem;
         width: 100%;
-    }
-
-    .pilares__img1,
-    .pilares__img2 {
-
         border-radius: 1rem;
     }
 
@@ -744,19 +560,15 @@ h2.titulo__nosotros {
         align-items: center;
         font-size: 18px;
         font-weight: bold;
-        margin: 0.5rem 1rem 0.5rem 2rem;
+        margin: 0 auto;
         padding: 1rem 2rem 1rem 1rem;
     }
 
     /*services*/
-    /*tuve que cambiar el wireframe porque no entraban dos cards por fila*/
-    .services {
-        padding-left: 2rem;
-    }
-
+    
     .services__grid {
         grid-template-columns: 1fr;
-        margin-left: 3rem;
+        margin: 1rem auto;
     }
 
     .card {
@@ -764,115 +576,83 @@ h2.titulo__nosotros {
     }
 
     .card__header img {
-        margin: 1rem 0;
-    }
-
-    .services__grid p {
-        line-height: 1.3;
-        margin-bottom: 1rem;
-    }
-
-    .card--link {
-        margin-top: 5rem;
+        margin: 1rem auto;
     }
 
     /*galery*/
-    /*tuve que cambiar el wireframe porque no entraban las imagenes*/
+    
     .img__galery {
         text-align: center;
         margin-top: 1rem;
     }
 
-    /*bootstrap*/
-    h2.galery__index {
-        margin-left: 5rem;
-    }
-
-    /*.img__galery--grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        margin-top: 2rem;
-    }*/
-
-    .img__content {
-        width: 100%;
-    }
-
-    /*contacto*/
-    .info__content {
-        width: 100%;
-        height: 50rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        padding: 0.2rem;
+    h2.galery__index,
+    .content__contacto--index {
         text-align: center;
     }
 
-    .content__address {
+    /*contacto*/
+    .content__contacto {
+        height: 60rem;
+    }
+
+    h2.content__contacto--index {
+        margin: 1rem auto;
+    }
+    .content__contacto--address {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        position: relative;
     }
 
     iframe {
-        margin: 1rem 3rem 1rem 0.5rem;
+        margin: 1rem;
         width: 20rem;
         height: 20rem;
 
     }
 
-    .content__lista {
+    .contacto__lista--iconos {
         margin-top: 2rem;
     }
 
-    .content--contacto {
-        grid-area: content--contacto;
-        margin: 0%;
-        left: 1rem;
-        top: 1rem;
+    .contacto--contacto {
+        position: absolute;
+        top: 42rem;
+        left: 3rem;
     }
 
-    .content--contacto h3 {
-        font-size: 18px;
+    .contacto--contacto h3 {
+        font-size: 1.3rem;
     }
 
-    .content__lista {
-        justify-self: center;
-        align-self: center;
-    }
-
-    .content__lista--contacto p {
+    .iconos--content p {
         margin-left: 1rem;
     }
 
     .boton {
         letter-spacing: 1px;
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
     }
 
     /*footer*/
-    /*bootstrap*/
+    
     .footer {
-        background-color: #f8f8ff;
-        justify-content: space-around;
-        height: 100%;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
     }
 
-    .content__navbar--footer {
-        display: none;
+    .footer__copyright,
+    .footer__copyright--pages {
+        margin: 0.5rem auto 0 auto;
+        font-size: 0.7rem;
+        text-align: center;
     }
 
-    p.footer__copyright {
-        margin-top: 2rem;
-    }
-
-    .contacto__icono {
-        width: 2rem;
-        height: 2rem;
-        margin: 0 0.5rem;
-    }
-
-    .footer__icons {
-        margin-bottom: 1rem;
+    a.footer__icons {
+        margin-bottom: 0;
     }
 
     /*pages*/
@@ -901,7 +681,7 @@ h2.titulo__nosotros {
     }
 
     .nosotros p {
-        font-size: 18px;
+        font-size: 1.2rem;
         margin: 1rem;
         padding: 1rem;
     }
@@ -909,147 +689,17 @@ h2.titulo__nosotros {
     /*footer*/
 
     .footer--pages {
-        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         height: 100%;
     }
 
-    .footer__copyright--pages {
-        font-size: 13px;
-        padding: 0;
-    }
-
     p.footer__copyright--pages {
-        padding-top: 0.5rem;
-    }
-
-    /*page services*/
-
-    h2.titulo__services {
-        font-size: 1.5rem;
-        top: 10rem;
-        left: 2rem;
-        animation: h2Moves 2s alternate;
-    }
-
-    /*animacion*/
-    @keyframes h2Moves {
-        0% {
-            top: 1rem;
-        }
-
-        100% {
-            top: 10rem;
-        }
-    }
-
-    /*bootstrap*/
-    /*.contenedor__mantenimiento{
-        grid-template-areas: 
-        "mantenimiento--info"
-        "lista__pages--servicio"
-    }*/
-    .mantenimiento {
-        border-radius: 1.5rem;
-    }
-
-    .mantenimiento--info,
-    .lista__pages--servicio,
-    .info__servicios {
-        text-align: center;
-        margin: 0.5rem;
-        padding: 0.5rem;
-    }
-
-    .mantenimiento--info p {
-        text-align: center;
-    }
-
-    .mantenimiento__img {
-        display: none;
-    }
-
-    .img1__servicios,
-    .img3__servicios {
-        display: none;
-    }
-
-    img.img2__servicios {
-        width: 25rem;
-        height: 20rem;
-    }
-
-    /* page galery*/
-    /*tuve que cambiar el wireframe porque no me entraban dos imagenes*/
-    .galery__blog {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-
-    h2.titulo__galery {
-        font-size: 1.5rem;
-        top: 12rem;
-        left: 4rem;
-        animation: h2Moves 2s alternate;
-    }
-
-    /*animacion*/
-    @keyframes h2Moves {
-        0% {
-            top: 1rem;
-        }
-
-        100% {
-            top: 12rem;
-        }
-    }
-
-    .galery__subtitulo {
         font-size: 1rem;
-        text-align: center;
-        margin: 2rem 0.5rem 0.5rem 0.5rem;
+        padding: 1rem auto;
     }
 
-    /*page contact us*/
-    .titulo__contacto h2 {
-        font-size: 1.5rem;
-        left: 7rem;
-        top: 12rem;
-    }
-
-    .titulo__contacto img {
-        height: 20rem;
-    }
-
-    .formulario {
-        margin: 1rem auto;
-        padding: 0.5rem;
-    }
-
-    textarea {
-        margin-left: 0.5rem
-    }
-
-    /*button{
-    margin: 0.5rem 0.5rem 0.5rem 6rem;
-    font-size: 10px;
-    }
-    button.boton{
-        padding: 0.4rem;
-    }*/
-    /*boot*/
-    .btn {
+    .footer__icons {
         margin: 1rem;
-        padding: 0.5rem;
-    }
-
-    .btn__form {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .contact__contacto {
-        margin: 1rem auto;
-        padding: 0.5rem;
     }
 }
