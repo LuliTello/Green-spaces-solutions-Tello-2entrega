@@ -650,6 +650,10 @@ h2.titulo__nosotros {
         font-size: 0.7rem;
         text-align: center;
     }
+    p.footer__copyright{
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    }
 
     a.footer__icons {
         margin-bottom: 0;
