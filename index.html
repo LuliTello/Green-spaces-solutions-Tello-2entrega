@@ -15,9 +15,7 @@
     <title>Green Spaces Solutions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css" />
 </head>
@@ -60,7 +58,6 @@
 
     <main>
         <section class="container">
-
             <div class="imagen__inicio">
                 <h1 class="titulo__inicio h1">Hacemos de un espacio <span>Tu espacio</span></h1>
             </div>
@@ -70,11 +67,9 @@
             <!--info preliminar de nuestra empresa-->
             <div class="pilares__content">
                 <div class="pilares__content--card">
-                    <div>
-                        <a href="./about-us.html">
-                            <img class="pilares__img1" src="./assets/img-pilar2.jpg" alt="nuestros-pilares">
-                        </a>
-                    </div>
+                    <a href="./about-us.html">
+                        <img class="pilares__img1" src="./assets/img-pilar2.jpg" alt="nuestros-pilares">
+                    </a>
                     <p class="pilares__description1">Calidad, excelencia y compromiso son los pilares de nuestra
                         empresa. Diseñamos espacios con profesionalismo para cada cliente.</p>
                 </div>
@@ -90,7 +85,7 @@
             </div>
         </section>
         <hr />
-        <section class="container">
+        <section class="container-fluid">
             <!--info preliminar de nuestros servicios-->
             <div class="services__grid">
                 <article class="card">
@@ -135,13 +130,10 @@
                     <p>Asesoramos al cliente para que tome una decision informada.</p>
                     <a class="card--link" href="services.html">Ver mas</a>
                 </article>
-
             </div>
-
         </section>
         <hr />
-        <!--bootstrap-->
-        <section class="container-fluid">
+        <section class="container">
             <h2 class="galery__index text-decoration-underline h2">NUESTRO TRABAJO</h2>
             <div class="container">
 
@@ -195,29 +187,29 @@
         <hr />
         <section class="container">
             <!--seccion de contacto-->
-            <div class="info__content">
-                <h2 class="contacto__index text-decoration-underline h2">DONDE ESTAMOS?</h2>
-                <div class="content__address">
+            <div class="content__contacto">
+                <h2 class="content__contacto--index text-decoration-underline h2">DONDE ESTAMOS?</h2>
+                <div class="content__contacto--address">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.138353751859!2d-60.59769055018443!3d-33.91183858054936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84ab9b0ae1021%3A0x98260abc78c916b3!2sRuta%20Nacional%208%20%26%20Alberdi%2C%20Pergamino%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654104561027!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="content__lista">
+                    <div class="contacto__lista--iconos">
                         <!--bootstrap-->
-                        <div class="content__lista--contacto">
+                        <div class="iconos--content">
                             <i class="bi bi-geo-alt fs-1"></i>
                             <p class="mt-3">Ruta 8 y Alberdi, Pergamino, Bs.As</p>
                         </div>
-                        <div class="content__lista--contacto">
+                        <div class="iconos--content">
                             <i class="bi bi-phone-vibrate fs-1"></i>
                             <p class="mt-3 ml-3">2477-15986347</p>
                         </div>
-                        <div class="content__lista--contacto">
+                        <div class="iconos--content">
                             <i class="bi bi-envelope fs-1 "></i>
                             <p class="mt-3 ml-3"> greenss@gmail.com.ar</p>
                         </div>
                     </div>
-                    <div class="content--contacto">
+                    <div class="contacto--contacto">
                         <h3>No dudes en <span>contactarnos!</span></h3>
                         <a class="boton" href="contact-us.html">Contactenos</a>
                     </div>
@@ -227,12 +219,11 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="contenedor footer container">
-            <div class="content__navbar">
+    <footer>
+        <div class="footer container-fluid bg-white">
+            <div class="contenedor__navbar">
                 <nav>
-
-                    <ul class="content__navbar--footer">
+                    <ul class="contenedor__navbar--footer">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -246,20 +237,27 @@
             </div>
             <!--bootstrap-->
             <div class="footer__icons">
-                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                <a href="" class="text-black fs-2 text-decoration-none">
                     <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://instagram.com" class="text-black fs-2 text-decoration-none m-2">
+                <a href="https://instagram.com" class="text-black fs-2 text-decoration-none">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="" class="text-black fs-2 text-decoration-none m-2">
+                <a href="" class="text-black fs-2 text-decoration-none">
                     <i class="bi bi-linkedin"></i>
                 </a>
             </div>
 
         </div>
     </footer>
+    <div class="position-fixed bottom-0 end-0 mb-5 me-4">
+        <img src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png" alt="Whatsapp"
+            width="50" height="50" />
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
